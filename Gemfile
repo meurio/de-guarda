@@ -38,3 +38,6 @@ group :production do
 end
 
 gem 'slim-rails'
+gem 'compass-rails', github: 'Compass/compass-rails', branch: 'rails4-hack'
+gem 'zurb-foundation'
+gem 'meurio_ui'

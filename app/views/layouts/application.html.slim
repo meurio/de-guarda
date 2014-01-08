@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title DeGuarda
+    = meurio_ui_assets
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+
+  body class=[controller.controller_name, controller.action_name]
+    - content_for :application_menu do
+      = link_to "Como Funciona", root_path + "#"
+      = link_to "Seja um Guardião", root_path + "#"
+    = meurio_header_for :deguarda
+
+    = yield
