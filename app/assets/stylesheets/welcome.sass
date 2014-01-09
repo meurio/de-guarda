@@ -11,7 +11,7 @@ $mr-green: #219548
 @import foundation
 @import meurio_ui
 
-h2, h3, p, span
+h2, h3, p, span, div
   font-family: Proxima Nova Soft
   
 
@@ -67,3 +67,23 @@ h2, h3, p, span
         margin-top: 1em
         font-size: .9em
         color: gray
+    .counter
+      padding: 0 1em 1em 1em
+      .count
+        display: inline-block
+        span.digit
+          background: image-url('counter-field.png') no-repeat
+          display: inline-block
+          font-weight: bolder
+          text-align: center
+          margin-left: 2px
+          padding-top: 4px
+          font-size: 2.3em
+          color: white
+          height: 47px
+          width: 39px
+      .guardians
+        font-weight: bold
+        margin-left: .7em
+        text-align: left
+        display: inline-block
