@@ -1,4 +1,36 @@
+$row-width: 980px
+
+$main-bg: #556773
+$de-guarda-green: #8DC73D
+
 @import compass/reset
 @import compass/css3
+@import fonts
 @import foundation
 @import meurio_ui
+
+h2, h3, p, span
+  font-family: Proxima Nova Soft
+  
+
+.main
+  background: $main-bg
+  padding: 1.8em 2em
+  .title
+    text-align: center
+    line-height: 1em
+    font-size: 1.5em
+    padding: 0 1em
+    color: white
+  .item
+    text-align: center
+    h3
+      color: $de-guarda-green
+      font-size: 1.2em
+      margin-bottom: 0
+    p
+      line-height: 1.2em
+      font-weight: 500
+      font-size: .9em
+      padding: 0 3em
+      color: white
