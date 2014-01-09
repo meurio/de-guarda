@@ -1,6 +1,7 @@
 $row-width: 980px
 
 $main-bg: #556773
+$bg-gray: #F4F5F7
 $de-guarda-green: #8DC73D
 
 @import compass/reset
@@ -42,3 +43,22 @@ h2, h3, p, span
       font-size: .9em
       padding: 0 3em
       color: white
+.projects
+  background: $bg-gray
+  padding-bottom: 10em
+  .project
+    +border-radius(3px)
+    background: white
+    overflow: hidden
+    margin-top: 2em
+    .content
+      padding: 1em
+      h3
+        font-size: 1.4em
+        font-weight: bold
+        margin: 0
+      p
+        line-height: 1.1em
+        margin-top: 1em
+        font-size: .9em
+        color: gray
