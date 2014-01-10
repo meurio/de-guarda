@@ -24,32 +24,34 @@
 .projects
   .row
     .large-6.small-12.columns
-      .project
-        .image.icon-01
-          = image_tag 'img-friedenreich.jpg'
-        .content
-          h3 De Guarda na Friedenreich
-          span Salve a Friedenreich
-          p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
-        .counter
-          .count
-            - [2, 7, 4, 1].each do |digit|
-              span.digit= digit
-          .guardians 
-            div guardiões
-            div em alerta
+      = link_to(ENV['FRIEDENREICH_HOST'] || 'http://deguarda.meurio.org.br/', target: :blank) do
+        .project
+          .image.icon-01
+            = image_tag 'img-friedenreich.jpg'
+          .content
+            h3 De Guarda na Friedenreich
+            span Salve a Friedenreich
+            p O Governo e a Prefeitura do Rio queriam derrubar a Escola Municipal Friedenreich a qualquer custo e não haviam dado aos pais nenhuma garantia legal de que seus filhos poderiam continuar na escola com segurança. Graças a nossa mobilização a Secretaria Municipal de Educação garantiu a permanência da Escola em 2013.
+          .counter
+            .count
+              - [1, 9, 5, 4].each do |digit|
+                span.digit= digit
+            .guardians 
+              div guardiões
+              div em alerta
     .large-6.small-12.columns
-      .project
-        .image
-          = image_tag 'img-bondinho.jpg'
-        .content
-          h3 De Guarda no Bondinho
-          span O bonde tem que voltar
-          p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
-        .counter
-          .count
-            - [1, 9, 5, 4].each do |digit|
-              span.digit= digit
-          .guardians 
-            div guardiões
-            div em alerta
+      = link_to(ENV['BONDINHO_HOST'] || 'http://deguardanobondinho.org.br/', target: :blank) do
+        .project
+          .image
+            = image_tag 'img-bondinho.jpg'
+          .content
+            h3 De Guarda no Bondinho
+            span O bonde tem que voltar
+            p Há dois anos, um acidente matou seis pessoas e tirou os bondinhos de Santa Teresa de circulação. Infelizmente, essa foi apenas a parte visível e trágica do sucateamento sistemático de um dos símbolos mais tradicionais do Rio de Janeiro. Abandonados em uma oficina, cerca de 60 toneladas de peças dos bondes já foram doadas a ONGs sem maiores explicações. Se isso continuar, em breve, dos bondinhos só restará a lembrança. Por isso, estamos de guarda! Vamos impedir a retirada de peças até que seja feito um inventário minucioso e atualizado desse patrimônio tombado.
+          .counter
+            .count
+              - [2, 7, 4, 1].each do |digit|
+                span.digit= digit
+            .guardians 
+              div guardiões
+              div em alerta
