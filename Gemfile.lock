@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: git://github.com/meurio/meurio_ui.git
-  revision: 67f22408d7a958fa41286e3e9ed3c34a2ee2a8e9
+  revision: e1d1bbda1f2e0901f40cc7e8d6d951eeab4616ca
   branch: minhascidades
   specs:
     meurio_ui (1.4.4)
