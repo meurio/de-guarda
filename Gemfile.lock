@@ -6,6 +6,13 @@ GIT
     compass-rails (1.0.3)
       compass (>= 0.12.2, < 0.14)
 
+GIT
+  remote: git://github.com/meurio/meurio_ui.git
+  revision: 67f22408d7a958fa41286e3e9ed3c34a2ee2a8e9
+  branch: minhascidades
+  specs:
+    meurio_ui (1.4.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -50,6 +57,9 @@ GEM
       sass (~> 3.1)
     erubis (2.7.0)
     execjs (2.0.2)
+    foundation-rails (5.1.1.0)
+      railties (>= 3.1.0)
+      sass (>= 3.2.0)
     fssm (0.2.10)
     hike (1.2.3)
     i18n (0.6.9)
@@ -63,7 +73,6 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    meurio_ui (1.4.4)
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.8.2)
@@ -132,8 +141,6 @@ GEM
     uglifier (2.4.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    zurb-foundation (4.3.2)
-      sass (>= 3.2.0)
 
 PLATFORMS
   ruby
@@ -141,9 +148,10 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
   compass-rails!
+  foundation-rails
   jbuilder (~> 1.2)
   jquery-rails
-  meurio_ui
+  meurio_ui!
   pg
   rails (= 4.0.1)
   rails_12factor
@@ -152,4 +160,3 @@ DEPENDENCIES
   slim-rails
   turbolinks
   uglifier (>= 1.3.0)
-  zurb-foundation

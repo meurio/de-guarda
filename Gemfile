@@ -39,5 +39,5 @@ end
 
 gem 'slim-rails'
 gem 'compass-rails', github: 'Compass/compass-rails', branch: 'rails4-hack'
-gem 'zurb-foundation'
-gem 'meurio_ui'
+gem 'foundation-rails'
+gem 'meurio_ui', github: "meurio/meurio_ui", branch: "minhascidades"
